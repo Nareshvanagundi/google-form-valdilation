@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GooleForm</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+
+        .container {
+            width: 100%;
+            background: lightblue;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        .googleForm {
+            width: 60%;
+            /* height: 100px; */
+            /* background: white; */
+            margin: 40px auto;
+        }
+
+        .row-1,
+        .row-2,
+        .row-3,
+        .row-4,
+        .row-5,
+        .row-6,
+        .row-7,
+        .row-8,
+        .row-9,
+        .row-10,
+        .row-11,
+        .row-12
+        {
+            background: white;
+            margin-top: 1em;
+            border-radius: 5px;
+            height: 20vh;
+
+        }
+
+        h1 {
+            margin-left: 0.5em;
+        }
+
+        .marginp {
+            margin-bottom: 1em;
+            margin-left: 0.8em;
+            margin-top: 0.8em;
+        }
+
+        .margin {
+            color: red;
+            margin-top: 0.5em;
+            margin-left: 1em;
+
+        }
+.bottom{
+    margin: 20em;
+}
+      
+        .input,.inputName,.inputEmail,.inputAddress,.inputNumber,.inputHire,.inputJoin {
+            width: 40%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+
+        }
+
+      
+
+        .submit{
+            width: 30%;
+            height: 5vh;
+            outline: none;
+            border: none;
+            font-size: 1.5rem;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 0.5em;
+            background: wheat;
+        }
+        .submit:hover{
+            background: purple;
+            color:white ;
+        }
+        .invalid{
+           color: red;
+        }
+      .center{
+          align-self: center;
+        
+      }
+
+
+    </style>
+</head>
+
+<div class="container flex">
+    <form action="file:///F:/pratice/goo/sumbitForm.html"  method="post" class="googleForm" id="googleForm">
+        <div class="row-1">
+            <h1>submit job profile</h1>
+            <p class="marginp">all of the sumbmissiom to this form will be appended into the table as a singnature style
+            </p>
+            <span class="margin">requried *</span>
+        </div>
+        <div class="row-2 center">
+            <label for="name" class="marginp label" id="mydiv">full name <span class="margin">*</span></label>
+
+            <p class="marginp">any text provided here will be used to create a digital singnature, including honorifocs
+                or degree</p>
+
+            <div class="margin name">
+                <input type="text" id="name" class=" inputName input " autocomplete="off" placeholder="your answer">
+              
+            </div>
+        </div>
+        <div class="row-3 email ">
+            
+            <label for="email" class="marginp ">email id <span class="margin">*</span></label>
+            <div class="margin">
+                <input type="text" id="email" class="inputEmail input" autocomplete="off" placeholder="your answer">
+            
+            </div>
+        </div>
+        <div class="row-4 number ">
+            
+            <label for="number" class="marginp ">phone number <span class="margin">*</span></label>
+            <div class="margin">
+                <input type="text" id="number" class="inputNumber input" autocomplete="off" placeholder="your answer">
+             
+            </div>
+        </div>
+        <div class="row-5 gender">
+            <label for="" class="marginp ">gender<span class="margin">*</span></label>
+            <div class="marginp">
+                <input type="radio" name="gender"  id="male"><label for="male">   male</label>
+            </div>
+                <div class="marginp ">
+                <input type="radio" name="gender" id="female"><label for="female">    female</label>
+            </div>
+            <div class="marginp">
+                <input type="radio" name="gender" id="others"><label for="others">      others</label>
+            </div>
+            </div> 
+        <div class="row-6 address">
+            <label for="address" class="marginp ">address <span class="margin">*</span></label>
+            <div class="margin">
+                <input type="text" id="address" class="inputAddress input"  autocomplete="off"placeholder="your answer">
+              
+            </div>
+
+        </div>
+        <div class="row-7 position ">
+            <label for="" class="marginp ">Department<span class="margin">*</span></label>
+            <div class="marginp">
+                <input type="radio" name="position"  id="electical"><label for="electical">   electrical</label>
+            </div>
+                <div class="marginp">
+                <input type="radio" name="position" id="computer"><label for="computer">    computer sceince</label>
+            </div> 
+                <div class="marginp">
+                <input type="radio" name="position" id="mechanical"><label for="mechanical">      mechanical</label>
+            </div>
+        </div>
+        
+        <div class="row-8 fresher">
+            <label for="" class="marginp ">exprerine / fresher<span class="margin">*</span></label>
+            <div class="marginp">
+                <input type="radio" name="fresher"   id="exprerine"><label for="exprerine">    exprerine</label>
+            </div>
+                <div class="marginp">
+                <input type="radio" name="fresher"   id="fresher"><label for="fresher">    fresher</label>
+            </div> 
+        </div>
+        <div class="row-9 hire">
+            <label for="hire" class="marginp ">why should i accpet you <span class="margin">*</span></label>
+            <div class="margin">
+                <input type="text" id="hire" class="inputHire" autocomplete="off" placeholder="your answer">
+             
+            </div>
+        </div>
+
+        <div class="row-10 join">
+            <label for="joinCompany" class="marginp ">why do want join your company<span class="margin">*</span></label>
+            <div class="margin">
+                <input type="text" id="joinCompany"  autocomplete="off" class="inputJoin input" placeholder="your answer">
+              
+            </div>
+        </div>
+
+    
+        <div class="row-11">
+            <label for="skill" class="marginp ">skills</label>
+            <div class="margin">
+                <input type="text" id="skill" class="input" autocomplete="off" placeholder="your answer">
+            </div>
+        </div>
+
+        <div class="row-12">
+            <label for="information" class="marginp "> additional information</label>
+            <div class="margin">
+                <input type="text" id="information" class="input" autocomplete="off" placeholder="your answer">
+            </div>
+        </div>
+
+        <div class="row-13">
+            <div class="sumbitBtn">
+                <input type="submit" value="submit" class="submit">
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+ <script src="scrpit.js"></script>
+
+</body>
+
+</html>
